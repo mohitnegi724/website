@@ -2,8 +2,8 @@ import React from 'react';
 import './Home.css';
 const Home =(props)=>{
 	return(
-			<div>
-				<p>This is Home</p>
+			<div className="HomeContainer">
+				<p className="HomeContainerText">Home</p>
 			</div>
 		)
 }

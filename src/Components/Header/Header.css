@@ -44,7 +44,7 @@ a{
 .MenuOptions{
 	text-align: center;
 	float: right;
-	width: 80vw;
+	width: 80%;
 	display: inline;
 }
 
@@ -67,7 +67,7 @@ a{
 }
 
 .MenuOptions ul li:hover{
-	letter-spacing: 2px;
+	letter-spacing: 0.5px;
 	text-shadow: 2px 2px #ffbc00;
 }
 
@@ -90,7 +90,10 @@ a{
 	float: right;
 }
 
-
+.current{
+	font-family:Raleway;
+	color: Green;
+}
 
 
 

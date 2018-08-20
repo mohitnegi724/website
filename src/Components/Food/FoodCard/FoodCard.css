@@ -1,54 +1,144 @@
-body{
-	width: 100%;
-	height: 100vh;
-	background-color: #40b16d;
-}
-.FoodCardBody{
-	width: 385px;
-	height: 280px;
+.resImage{
 	outline: none;
+    border: none;
+    background-position: 50%;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 300px;
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+}
+.FoodContainerDiv{
 	text-align: center;
-	margin: 0.5%;
-	border:none;
+	width: 100%;
+	height: 100%;
+	padding-top: 60px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+.MainContainer{
+	position: relative;
+	margin-top: 60px;
+}
+.FoodcardBody{
+	overflow: hidden;
+	cursor: pointer;
+	width: 300px;
+	height: 215px;
+	margin: 6px;
+	display: inline-block;
+	box-shadow: 0px 0px 1px 0px rgba(32,32,32,0.3);
+	transition: 0.5s ease-in-out;
+}
+.FoodcardBody:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+.resImage{
+	outline: none;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+	width: 300px;
+	height: 155px;
+	position: relative;
+	overflow: hidden;
+}
+
+.NameAndRating{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+.NameAndRating p{
+	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
-	box-shadow: 0px 0px 2px 0px rgba(32,32,32,0.5);
 }
-
-.FoodCardBody:hover{
-	box-shadow: 0px 0px 10px 2px rgba(32,32,32,0.5);
-}
-
-.RestHeaderImage{
-	width: 100%;
-	height: 140px;
-	border: none;
-	outline: none;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#Name{
+.NameAndRating .resName{
 	margin: 0;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway', Quicksand;
+}
+
+.NameAndRating .resRating{
+	margin:0;
+	position: relative;
+	font-family: 'Raleway',quicksand ;
+	display: inline-block;
 	padding:0;
-	font-size: 20px; 
+	float: right;
+	font-size: 12px;
+	right: 4px;
+}
+
+.resLocation{
+	cursor: pointer;
+	position: relative;
+    font-size: 12px;
+    font-family: quicksand;
+    float: right;
+    right: 5px;
+    margin: 0;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+}
+
+.resLocation:hover{
+	color: blue;
+}
+
+.ratingStar{
+	margin-right: 8px;
+	width: 13px;
+	height: 13px;
+}
+
+.RatingDiv{
+	position: absolute;
+	float: right;
+    margin: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.resType{
+	margin-left: 5px;
+	margin-bottom: -5px;
+	float: left;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 25px;
+	max-height: 25px;
+}
+
+.Bottom{
+	width: 100%;
+	height: 25px;
+	margin: 0;
+	position: relative;
+}
+
+.MealPrice{
+	line-height: 2;
+	padding: 2px;
+	text-align: center;
+	font-size: 12px;
+	font-family: quicksand;
 	font-weight: normal;
-	font-family: 'Archivo Narrow',quicksand;
-	margin-left: 10px;
-	text-align: left;
-}
-
-.type{
-	position: absolute;
-	bottom: 0;
-	font-size: 12px;
-	right: 10px;
-}
-
-.MustTry{
-	width: 50%;
-	position: absolute;
-	bottom: 0;
-	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	margin: 0
 }

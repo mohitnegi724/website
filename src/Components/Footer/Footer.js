@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Footer.css';
 
-const Footer =()=>{
-	return (
+export default class Footer extends Component{
+	render(){
+		return (
 		<div className="Footer">
 			<div className="OurSocialMedia">
 				<a href="https://www.instagram.com/uttarakhandtheheaven" target="_blank" rel="noopener noreferrer"><img src="https://uttarakhandtheheaven.com/images/insta.png" alt="Insta"/></a>
@@ -13,7 +14,6 @@ const Footer =()=>{
 				<p>Made With Love In High Hills Of Uttarakhand - The Heaven</p>
 			</div>
 		</div>
-	)
+		)
+	}
 }
-export default Footer;
-

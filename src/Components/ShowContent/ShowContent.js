@@ -8,6 +8,7 @@ import {Switch, Route } from 'react-router-dom';
 const ShowContent =()=>{
 	return(
 		<Switch>
+			<Route exact path='/' component={Home}></Route>
 			<Route exact path='/dehradun' component={Home}></Route>
 			<Route exact path='/dehradun/food' component={FoodCards}></Route>
 			<Route exact path='/dehradun/listings/:restId' component={OpenFoodCard}></Route>

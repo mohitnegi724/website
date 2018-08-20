@@ -6,7 +6,7 @@ import './App.css';
 
 export default class App extends Component {
   state={
-        showFooter:true,
+        showFooter:false,
   };
   FooterHandler=()=>{
     let CurrentshowFooterStatus = this.state.showFooter;

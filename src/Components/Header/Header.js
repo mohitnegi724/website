@@ -10,7 +10,7 @@ const Header=(props)=>{
 				</div>
 				<div className="MenuOptions">
 					<ul>
-						<li><NavLink exact to="/">Home</NavLink></li>
+						<li><NavLink exact to="/dehradun">Home</NavLink></li>
 						<li><NavLink exact to="/dehradun/food">Food</NavLink></li>
 						<li><NavLink exact to="/dehradun/stay">Stay</NavLink></li>
 						<li><NavLink exact to="/dehradun/travel">Travel</NavLink></li>

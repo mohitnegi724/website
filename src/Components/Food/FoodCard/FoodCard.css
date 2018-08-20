@@ -1,0 +1,54 @@
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: #40b16d;
+}
+.FoodCardBody{
+	width: 385px;
+	height: 280px;
+	outline: none;
+	text-align: center;
+	margin: 0.5%;
+	border:none;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0px 0px 2px 0px rgba(32,32,32,0.5);
+}
+
+.FoodCardBody:hover{
+	box-shadow: 0px 0px 10px 2px rgba(32,32,32,0.5);
+}
+
+.RestHeaderImage{
+	width: 100%;
+	height: 140px;
+	border: none;
+	outline: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#Name{
+	margin: 0;
+	padding:0;
+	font-size: 20px; 
+	font-weight: normal;
+	font-family: 'Archivo Narrow',quicksand;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.type{
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	right: 10px;
+}
+
+.MustTry{
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+}

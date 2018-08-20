@@ -1,0 +1,230 @@
+body{
+    outline: none;
+}
+
+.MainContainer{
+	text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    display: block;
+}
+
+.BlurryBGDiv{
+	width: 100%;
+	height: 50vh;
+	position: fixed;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.BlurryBGImage{
+	background-position: fixed;
+	width: 100vw;
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+	-webkit-filter: blur(8px); 
+	filter: blur(8px); 
+	overflow: hidden;
+	max-height: 50vh;
+}
+
+.mainRestaurantImage{
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    width: 800px;
+    height: 500px;
+    margin-top: -250px;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0px 0 9px 1px rgba(0,0,0,.2);
+}
+
+.RestaurantSocialMedia{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 60px;
+    padding-bottom: 10px;
+}
+.RestaurantSocialMedia img{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.CardDetailContainer{
+	margin-top: 50vh;
+    width: 100%;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    margin-left: auto;
+    display: inline-grid;
+}
+
+.CardTitle{
+	font-size: 25px;
+    font-family: Merriweather;
+    width: auto;
+    position: relative;
+    margin: 0;
+    padding-right: 0;
+    margin-left: auto;
+    display: inline-flex;
+    margin-right: auto;
+}
+
+.TitleFormat{
+	padding: 0;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: max-content;
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+.RestaurantType{
+	cursor: pointer;
+    width: 50px;
+    margin-left: auto;
+    display: block;
+    height: 50px;
+    margin-right: auto;
+}
+
+.RestaurantPriceSection{
+}
+
+.detailSection{
+    font-family: quicksand;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    background-color: #366ed1;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px 0 2px 0px rgba(0,0,0,.5);
+    margin: 5px;
+    transition: 0.9s ease-in-out
+}
+
+.timingSection{
+}
+
+.mapSection{
+    cursor: pointer;
+}
+
+.CardTitleRestaurantAddress{
+	font-family: Raleway;
+	margin: 0;
+	padding:0;
+    padding: 10px;
+	font-weight: bold;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.RestaurantMustTry{
+    margin: 10px;
+	word-spacing: 2px;
+	font-family: quicksand;
+}
+
+.MustTryDishes{
+	font-family: quicksand;
+	text-align: center;
+	width: 800px;
+	height: 80px;
+	display: inline-block;
+	position: relative;
+	color: black;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.RestaurantMustTryTitle{
+    margin: 0;
+    font-family: Merriweather;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    height: max-content;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+.CardDetails{
+	width: 800px;
+	text-align: center;
+	position: relative;
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contactRestaurant{
+	width: 50px;
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+
+.contactRestaurant img{
+	cursor: pointer;
+}
+
+.RestaurantServices{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.RestaurantService{
+    font-family: quicksand;
+    margin-right: 5px;
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    width: 200px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    border:1px solid black;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+}
+
+.RestaurantContact{
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand;
+}
+
+.ServiceName{
+    line-height: 3;
+    font-weight: bold;
+}

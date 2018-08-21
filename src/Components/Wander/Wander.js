@@ -1,6 +1,6 @@
 import React from 'react';
-import './Travel.css';
-export default class Travel extends React.Component{
+import './Wander.css';
+export default class Wander extends React.Component{
 	render(){
 		return(
 				<div className="TravelContainer">

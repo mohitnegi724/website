@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import FoodCard from './FoodCard.js';
 import './FoodCard.css';
 
-export default class FoodCards extends React.Component {
+export default class FoodCards extends Component {
 	constructor(props){
 		super(props);
 			this.state={
@@ -285,7 +285,6 @@ export default class FoodCards extends React.Component {
 	          RestaurantGeographicalLocation:[28.478573, 77.324504]}
 	        ],
 	        ratingImage:"https://png.icons8.com/color/1600/star.png",
-	        RestaurantContact:"+91 9560 788 976",
 	  		}
   		}
   	renderRestaurants() {

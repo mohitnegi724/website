@@ -16,7 +16,7 @@ const Header=(props)=>{
 						<li><NavLink exact activeClassName="current" to="/dehradun">Home</NavLink></li>
 						<li><NavLink exact activeClassName="current" to="/dehradun/food">Food</NavLink></li>
 						<li><NavLink exact activeClassName="current" to="/dehradun/stay">Stay</NavLink></li>
-						<li><NavLink exact activeClassName="current" to="/travel">Travel</NavLink></li>
+						<li><NavLink exact activeClassName="current" to="/wander">Wander</NavLink></li>
 						<div className="fix">
 							<li><NavLink exact activeClassName="current" to="/stories">Stories</NavLink></li>
 							<li><NavLink exact activeClassName="current" to="/music">Music</NavLink></li>

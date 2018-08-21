@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Link} from 'react-router-dom';
 import './FoodCard.css';
 export default class FoodCardRestaurants extends Component {
-  state={
-        index:null,
-  };
   render(){
     return(
-          <Link to={`/dehradun/listings/${this.props.RestKey}`}>
+          <Link to={`/dehradun/food/${this.props.RestKey}`}>
             <div className="FoodcardBody">
               <img className="resImage" src={this.props.imageSource} alt={this.props.resName}/>
               <div className="NameAndRating">

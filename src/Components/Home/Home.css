@@ -19,10 +19,7 @@
     background-color: rgba(0,0,0,.5);
     transition: 0.9s ease-in-out;
     border-radius: 50%;
-}
-
-.HomeContainerDiv:hover{
-	box-shadow: 0px 0px 10px 10px rgba(32,32,32,0.3);
+    animation: Rings 5s infinite;
 }
 
 .HomeLogo{
@@ -32,4 +29,10 @@
 	top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+@keyframes Rings{
+    0% {box-shadow: 0px 0px 1px 0px rgba(32,32,32,0.3)}
+    50%{box-shadow: 0px 0px 10px 10px rgba(32,32,32,0.3)}
+    100%{box-shadow: 0px 0px 1px 0px rgba(32,32,32,0.3)}
 }

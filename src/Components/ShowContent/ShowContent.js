@@ -1,8 +1,8 @@
 import React from 'react';
 import './ShowContent.css';
 import Home from './../Home/Home';
-import Travel from './../Travel/Travel';
-import Stay from './../Stay/Stay';
+import Wander from './../Wander/Wander';
+import StayCards from './../Stay/StayCard/StayCards';
 import FoodCards from './../Food/FoodCard/FoodCards';
 import {Switch, Route } from 'react-router-dom';
 
@@ -21,13 +21,13 @@ const ShowContent =()=>{
 				</Route>
 			<Route 
 				exact 
-				path='/travel'
-				component={Travel}>
+				path='/wander'
+				component={Wander}>
 				</Route>
 			<Route 
 				exact 
 				path='/dehradun/stay'
-				component={Stay}>
+				component={StayCards}>
 				</Route>
 			<Route
 				exact
@@ -36,8 +36,13 @@ const ShowContent =()=>{
 				</Route>
 			<Route
 				exact
-				path='/dehradun/listings/:restId'
+				path='/dehradun/food/:restId'
 				component={FoodCards}>
+				</Route>
+			<Route
+				exact
+				path='/dehradun/stay/:stayId'
+				component={StayCards}>
 				</Route>
 		</Switch>
 		)

@@ -29,6 +29,7 @@ a{
 
 .HeaderBody #logo{
 	text-align: center;
+	width: 200px;
 	height: 40px;
 	padding-left: 10px;
 	display: inline-block;

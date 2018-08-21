@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import FoodCards from './../FoodCard/FoodCards'
+import React from 'react';
+import {withRouter} from 'react-router-dom';
 import './OpenFoodCard.css';
 const OpenFoodCard=(props)=>{
+	console.log(props.match.params.restId)
 	return(
 		<div className="MainContainer">
 			<div className="BlurryBGDiv">
@@ -74,7 +75,8 @@ const OpenFoodCard=(props)=>{
 				</div>
 			</div>
 		</div>
+
 		)
 }
 
-export default OpenFoodCard
+export default withRouter(OpenFoodCard)

@@ -6,7 +6,9 @@ const Header=(props)=>{
 		<div className="Header">
 			<div className="HeaderBody">
 				<div id="logo">
-					<img src="https://png.icons8.com/color/1600/alps.png" alt="Logo"/>
+						<NavLink exact activeClassName="current" to="/dehradun">
+							<img src="https://png.icons8.com/color/1600/alps.png" alt="Logo"/>
+						</NavLink>
 				</div>
 				<div className="MenuOptions">
 					<ul>

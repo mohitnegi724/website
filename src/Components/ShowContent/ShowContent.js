@@ -4,7 +4,6 @@ import Home from './../Home/Home';
 import Travel from './../Travel/Travel';
 import Stay from './../Stay/Stay';
 import FoodCards from './../Food/FoodCard/FoodCards';
-import OpenFoodCard from './../Food/OpenFoodCard/OpenFoodCard';
 import {Switch, Route } from 'react-router-dom';
 
 const ShowContent =()=>{
@@ -38,7 +37,7 @@ const ShowContent =()=>{
 			<Route
 				exact
 				path='/dehradun/listings/:restId'
-				component={OpenFoodCard}>
+				component={FoodCards}>
 				</Route>
 		</Switch>
 		)

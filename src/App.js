@@ -18,7 +18,9 @@ export default class App extends Component {
     return (
       <div className="MainBody">
         <Header/>
+        <div style={{paddingTop: 60}}>
         <ShowContent/>
+        </div>
         <div className="FooterArea">
           <div className="ToggleFooter" onClick={this.FooterHandler}>
             <p className="ToggleFooterText">Let's Be Friends</p>

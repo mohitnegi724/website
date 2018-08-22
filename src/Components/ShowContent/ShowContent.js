@@ -4,6 +4,7 @@ import Home from './../Home/Home';
 import Wander from './../Wander/Wander';
 import StayCards from './../Stay/StayCard/StayCards';
 import FoodCards from './../Food/FoodCard/FoodCards';
+import Music from './../Music/Music';
 import {Switch, Route } from 'react-router-dom';
 
 const ShowContent =()=>{
@@ -43,6 +44,11 @@ const ShowContent =()=>{
 				exact
 				path='/dehradun/stay/:stayId'
 				component={StayCards}>
+				</Route>
+			<Route
+				exact
+				path='/music'
+				component={Music}>
 				</Route>
 		</Switch>
 		)

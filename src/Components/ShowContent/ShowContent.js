@@ -5,6 +5,7 @@ import Wander from './../Wander/Wander';
 import StayCards from './../Stay/StayCard/StayCards';
 import FoodCards from './../Food/FoodCard/FoodCards';
 import Music from './../Music/Music';
+import Error404 from './../Error404/Error404';
 import {Switch, Route } from 'react-router-dom';
 
 const ShowContent =()=>{
@@ -37,18 +38,22 @@ const ShowContent =()=>{
 				</Route>
 			<Route
 				exact
-				path='/dehradun/food/:restId'
+				path='/dehradun/food/:Id'
 				component={FoodCards}>
 				</Route>
 			<Route
 				exact
-				path='/dehradun/stay/:stayId'
+				path='/dehradun/stay/:Id'
 				component={StayCards}>
 				</Route>
 			<Route
 				exact
 				path='/music'
 				component={Music}>
+				</Route>
+			<Route
+				path='*'
+				component={Error404}>
 				</Route>
 		</Switch>
 		)

@@ -75,8 +75,9 @@ export default class StayCards extends Component{
 		let StaysArray = this.state.Stay;
 		return StaysArray.map((Stay, Index)=>{
 			return <StayCard
+			key={Stay.StayKey}
 			rating={this.state.ratingImage}
-			StayId = {Stay.StayKey}
+			Id= {Stay.StayKey}
 			stayName={Stay.StayName}
 			imageSource={Stay.StayImage}
 			stayRating={Stay.StayRating}

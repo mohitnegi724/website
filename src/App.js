@@ -8,6 +8,10 @@ export default class App extends Component {
   state={
         showFooter:false,
   };
+  Constructor(){
+    console.log("App Constructor")
+  }
+    
   FooterHandler=()=>{
     let CurrentshowFooterStatus = this.state.showFooter;
     this.setState({
@@ -15,6 +19,7 @@ export default class App extends Component {
     })
   }
   render() {
+    console.log("App Render")
     return (
       <div className="MainBody">
         <Header/>

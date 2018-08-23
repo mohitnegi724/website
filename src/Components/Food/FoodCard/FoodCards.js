@@ -4,6 +4,7 @@ import './FoodCard.css';
 
 export default class FoodCards extends Component {
 	constructor(props){
+		console.log("******************************************************FoodCards Constructor");
 		super(props);
 			this.state={
 	        Restaurants:[
@@ -285,23 +286,41 @@ export default class FoodCards extends Component {
 	          RestaurantGeographicalLocation:[28.478573, 77.324504]}
 	        ],
 	        ratingImage:"https://png.icons8.com/color/1600/star.png",
-	  		}
+	  	}
   		}
-  	renderRestaurants() {
+  	
+  	renderRestaurants=()=>{
   		let RestaurantsArray = this.state.Restaurants;
   		return RestaurantsArray.map((Restaurant, Index)=>{
-  			return <FoodCard imageSource={Restaurant.RestaurantThumbImage}
-  					rating={this.state.ratingImage}
-  					resRating={Restaurant.RestaurantRating}
-  					RestKey={Restaurant.RestaurantKey}
-  					resName={Restaurant.RestaurantName}
-  					MealPrice={Restaurant.MealPrice}
-  					MustTry={Restaurant.RestaurantMustTry}
-  					resLocation={Restaurant.RestaurantLocation}
-  					resType={Restaurant.RestaurantType}/>;
+  			console.log(Restaurant.RestaurantName)
+  			return <FoodCard 
+  				imageSource={Restaurant.RestaurantThumbImage}
+  				key={Restaurant.RestaurantKey}
+  				rating={this.state.ratingImage}
+  				resRating={Restaurant.RestaurantRating}
+  				Id={Restaurant.RestaurantKey}
+  				resName={Restaurant.RestaurantName}
+  				MealPrice={Restaurant.MealPrice}
+  				MustTry={Restaurant.RestaurantMustTry}
+  				resLocation={Restaurant.RestaurantLocation}
+  				resType={Restaurant.RestaurantType}/>
   		});
   	}
+
+  	componentWillMount(){
+  		console.log("******************************************************FoodCards Component Will Mount");
+  	}
+
+  	componentDidMount(){
+  		console.log("******************************************************FoodCards Component Did Mount");
+  	}
+
+  	componentWillUnmount(){
+  		console.log("******************************************************FoodCards Component Will Unmount");
+  	}
+
   	render() {
+  		console.log("******************************************************FoodCards Render");
   		return (
   			<div className="FoodContainerDiv">
   				{this.renderRestaurants()}

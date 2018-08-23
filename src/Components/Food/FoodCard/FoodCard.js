@@ -4,8 +4,8 @@ import './FoodCard.css';
 export default class FoodCardRestaurants extends Component {
   render(){
     return(
-          <Link to={`/dehradun/food/${this.props.RestKey}`}>
-            <div className="FoodcardBody">
+          <Link to={`/dehradun/food/${this.props.Id}`}>
+            <div className="FoodcardBody" key={this.props.Id}>
               <img className="resImage" src={this.props.imageSource} alt={this.props.resName}/>
               <div className="NameAndRating">
                 <p className="resName">{this.props.resName}</p>

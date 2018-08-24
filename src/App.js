@@ -5,21 +5,30 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 
 export default class App extends Component {
-  state={
+  constructor(props){
+    console.log("******************************************************App Constructor");
+      super(props);
+        this.state={
         showFooter:false,
-  };
-  Constructor(){
-    console.log("App Constructor")
-  }
-    
+        };
+      }
   FooterHandler=()=>{
     let CurrentshowFooterStatus = this.state.showFooter;
     this.setState({
       showFooter:!CurrentshowFooterStatus
     })
   }
+  componentWillMount(){
+    console.log("******************************************************App Component Will Mount")
+  }
+  componentDidMount(){
+    console.log("******************************************************App Component Did Mount");
+  }
+  componentWillUnmount(){
+    console.log("******************************************************App Component Will UnMount")
+  }
   render() {
-    console.log("App Render")
+    console.log("******************************************************App Render")
     return (
       <div className="MainBody">
         <Header/>
